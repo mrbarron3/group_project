@@ -1,0 +1,703 @@
+"Country","year","prematured_death"
+"Australia"," 1990",2361
+"Australia"," 1995",2234
+"Australia"," 2000",2044
+"Australia"," 2005",1688
+"Australia"," 2006",1656
+"Australia"," 2007",1658
+"Australia"," 2008",1652
+"Australia"," 2009",1618
+"Australia"," 2010",1601
+"Australia"," 2011",1612
+"Australia"," 2012",1600
+"Australia"," 2013",1601
+"Australia"," 2014",1637
+"Australia"," 2015",1670
+"Australia"," 2016",1625
+"Australia"," 2017",1622
+"Australia"," 2018",1697
+"Australia"," 2019",1781
+"Austria"," 1990",5217
+"Austria"," 1995",4829
+"Austria"," 2000",3955
+"Austria"," 2005",3470
+"Austria"," 2006",3359
+"Austria"," 2007",3310
+"Austria"," 2008",3241
+"Austria"," 2009",3236
+"Austria"," 2010",3166
+"Austria"," 2011",3088
+"Austria"," 2012",3008
+"Austria"," 2013",2890
+"Austria"," 2014",2759
+"Austria"," 2015",2670
+"Austria"," 2016",2442
+"Austria"," 2017",2287
+"Austria"," 2018",2307
+"Austria"," 2019",2389
+"Belgium"," 1990",6999
+"Belgium"," 1995",6292
+"Belgium"," 2000",5496
+"Belgium"," 2005",4625
+"Belgium"," 2006",4532
+"Belgium"," 2007",4596
+"Belgium"," 2008",4698
+"Belgium"," 2009",4755
+"Belgium"," 2010",4730
+"Belgium"," 2011",4599
+"Belgium"," 2012",4385
+"Belgium"," 2013",4041
+"Belgium"," 2014",3658
+"Belgium"," 2015",3532
+"Belgium"," 2016",3418
+"Belgium"," 2017",3425
+"Belgium"," 2018",3447
+"Belgium"," 2019",3491
+"Canada"," 1990",5890
+"Canada"," 1995",5994
+"Canada"," 2000",5454
+"Canada"," 2005",5172
+"Canada"," 2006",4972
+"Canada"," 2007",4762
+"Canada"," 2008",4488
+"Canada"," 2009",4192
+"Canada"," 2010",3954
+"Canada"," 2011",3772
+"Canada"," 2012",3647
+"Canada"," 2013",3537
+"Canada"," 2014",3500
+"Canada"," 2015",3493
+"Canada"," 2016",3574
+"Canada"," 2017",3655
+"Canada"," 2018",3790
+"Canada"," 2019",3765
+"Chile"," 1990",3698
+"Chile"," 1995",3793
+"Chile"," 2000",4033
+"Chile"," 2005",4165
+"Chile"," 2006",4170
+"Chile"," 2007",4255
+"Chile"," 2008",4240
+"Chile"," 2009",4450
+"Chile"," 2010",4641
+"Chile"," 2011",4738
+"Chile"," 2012",4926
+"Chile"," 2013",5157
+"Chile"," 2014",5304
+"Chile"," 2015",5426
+"Chile"," 2016",5262
+"Chile"," 2017",5315
+"Chile"," 2018",5508
+"Chile"," 2019",5808
+"Colombia"," 1990",6955
+"Colombia"," 1995",8211
+"Colombia"," 2000",9541
+"Colombia"," 2005",9332
+"Colombia"," 2006",9749
+"Colombia"," 2007",9946
+"Colombia"," 2008",10499
+"Colombia"," 2009",11240
+"Colombia"," 2010",11409
+"Colombia"," 2011",11123
+"Colombia"," 2012",11228
+"Colombia"," 2013",11286
+"Colombia"," 2014",11320
+"Colombia"," 2015",11690
+"Colombia"," 2016",11885
+"Colombia"," 2017",12099
+"Colombia"," 2018",12557
+"Colombia"," 2019",13033
+"Costa Rica"," 1990",364
+"Costa Rica"," 1995",479
+"Costa Rica"," 2000",593
+"Costa Rica"," 2005",608
+"Costa Rica"," 2006",648
+"Costa Rica"," 2007",596
+"Costa Rica"," 2008",624
+"Costa Rica"," 2009",628
+"Costa Rica"," 2010",729
+"Costa Rica"," 2011",718
+"Costa Rica"," 2012",740
+"Costa Rica"," 2013",773
+"Costa Rica"," 2014",803
+"Costa Rica"," 2015",852
+"Costa Rica"," 2016",889
+"Costa Rica"," 2017",887
+"Costa Rica"," 2018",915
+"Costa Rica"," 2019",938
+"Czech Republic"," 1990",12994
+"Czech Republic"," 1995",10949
+"Czech Republic"," 2000",8628
+"Czech Republic"," 2005",7869
+"Czech Republic"," 2006",7547
+"Czech Republic"," 2007",7476
+"Czech Republic"," 2008",7484
+"Czech Republic"," 2009",7433
+"Czech Republic"," 2010",7383
+"Czech Republic"," 2011",7312
+"Czech Republic"," 2012",7110
+"Czech Republic"," 2013",6868
+"Czech Republic"," 2014",6490
+"Czech Republic"," 2015",6397
+"Czech Republic"," 2016",6173
+"Czech Republic"," 2017",6104
+"Czech Republic"," 2018",6248
+"Czech Republic"," 2019",6255
+"Denmark"," 1990",3667
+"Denmark"," 1995",3163
+"Denmark"," 2000",2548
+"Denmark"," 2005",2065
+"Denmark"," 2006",2043
+"Denmark"," 2007",2032
+"Denmark"," 2008",2002
+"Denmark"," 2009",1999
+"Denmark"," 2010",1954
+"Denmark"," 2011",1831
+"Denmark"," 2012",1663
+"Denmark"," 2013",1487
+"Denmark"," 2014",1332
+"Denmark"," 2015",1276
+"Denmark"," 2016",1312
+"Denmark"," 2017",1347
+"Denmark"," 2018",1344
+"Denmark"," 2019",1298
+"Estonia"," 1990",706
+"Estonia"," 1995",709
+"Estonia"," 2000",523
+"Estonia"," 2005",443
+"Estonia"," 2006",430
+"Estonia"," 2007",425
+"Estonia"," 2008",390
+"Estonia"," 2009",366
+"Estonia"," 2010",332
+"Estonia"," 2011",318
+"Estonia"," 2012",287
+"Estonia"," 2013",245
+"Estonia"," 2014",216
+"Estonia"," 2015",182
+"Estonia"," 2016",160
+"Estonia"," 2017",146
+"Estonia"," 2018",150
+"Estonia"," 2019",160
+"Finland"," 1990",1345
+"Finland"," 1995",1090
+"Finland"," 2000",880
+"Finland"," 2005",710
+"Finland"," 2006",697
+"Finland"," 2007",699
+"Finland"," 2008",699
+"Finland"," 2009",702
+"Finland"," 2010",700
+"Finland"," 2011",663
+"Finland"," 2012",595
+"Finland"," 2013",511
+"Finland"," 2014",429
+"Finland"," 2015",369
+"Finland"," 2016",330
+"Finland"," 2017",313
+"Finland"," 2018",332
+"Finland"," 2019",385
+"France"," 1990",22880
+"France"," 1995",20663
+"France"," 2000",19240
+"France"," 2005",17046
+"France"," 2006",16863
+"France"," 2007",16923
+"France"," 2008",17209
+"France"," 2009",17432
+"France"," 2010",17354
+"France"," 2011",17041
+"France"," 2012",16498
+"France"," 2013",15509
+"France"," 2014",14376
+"France"," 2015",13982
+"France"," 2016",13026
+"France"," 2017",12815
+"France"," 2018",12989
+"France"," 2019",13245
+"Germany"," 1990",63251
+"Germany"," 1995",53153
+"Germany"," 2000",41097
+"Germany"," 2005",34431
+"Germany"," 2006",34124
+"Germany"," 2007",34503
+"Germany"," 2008",35240
+"Germany"," 2009",36057
+"Germany"," 2010",36116
+"Germany"," 2011",35032
+"Germany"," 2012",33498
+"Germany"," 2013",31794
+"Germany"," 2014",29345
+"Germany"," 2015",28539
+"Germany"," 2016",27200
+"Germany"," 2017",26416
+"Germany"," 2018",26591
+"Germany"," 2019",27041
+"Greece"," 1990",6844
+"Greece"," 1995",7118
+"Greece"," 2000",7607
+"Greece"," 2005",6951
+"Greece"," 2006",6913
+"Greece"," 2007",7118
+"Greece"," 2008",7030
+"Greece"," 2009",7027
+"Greece"," 2010",6941
+"Greece"," 2011",6971
+"Greece"," 2012",6872
+"Greece"," 2013",6439
+"Greece"," 2014",6077
+"Greece"," 2015",5892
+"Greece"," 2016",5573
+"Greece"," 2017",5431
+"Greece"," 2018",5608
+"Greece"," 2019",5715
+"Hungary"," 1990",11210
+"Hungary"," 1995",11439
+"Hungary"," 2000",9472
+"Hungary"," 2005",9089
+"Hungary"," 2006",8833
+"Hungary"," 2007",8892
+"Hungary"," 2008",8622
+"Hungary"," 2009",8670
+"Hungary"," 2010",8520
+"Hungary"," 2011",8345
+"Hungary"," 2012",8111
+"Hungary"," 2013",7688
+"Hungary"," 2014",7495
+"Hungary"," 2015",7486
+"Hungary"," 2016",7047
+"Hungary"," 2017",7035
+"Hungary"," 2018",7114
+"Hungary"," 2019",6940
+"Iceland"," 1990",31
+"Iceland"," 1995",28
+"Iceland"," 2000",25
+"Iceland"," 2005",23
+"Iceland"," 2006",22
+"Iceland"," 2007",22
+"Iceland"," 2008",22
+"Iceland"," 2009",22
+"Iceland"," 2010",21
+"Iceland"," 2011",21
+"Iceland"," 2012",20
+"Iceland"," 2013",18
+"Iceland"," 2014",16
+"Iceland"," 2015",15
+"Iceland"," 2016",15
+"Iceland"," 2017",15
+"Iceland"," 2018",15
+"Iceland"," 2019",16
+"Ireland"," 1990",1464
+"Ireland"," 1995",1328
+"Ireland"," 2000",1104
+"Ireland"," 2005",845
+"Ireland"," 2006",821
+"Ireland"," 2007",791
+"Ireland"," 2008",770
+"Ireland"," 2009",754
+"Ireland"," 2010",705
+"Ireland"," 2011",701
+"Ireland"," 2012",674
+"Ireland"," 2013",637
+"Ireland"," 2014",593
+"Ireland"," 2015",560
+"Ireland"," 2016",510
+"Ireland"," 2017",486
+"Ireland"," 2018",501
+"Ireland"," 2019",535
+"Israel"," 1990",2173
+"Israel"," 1995",2632
+"Israel"," 2000",2472
+"Israel"," 2005",2347
+"Israel"," 2006",2338
+"Israel"," 2007",2388
+"Israel"," 2008",2367
+"Israel"," 2009",2348
+"Israel"," 2010",2357
+"Israel"," 2011",2397
+"Israel"," 2012",2376
+"Israel"," 2013",2343
+"Israel"," 2014",2302
+"Israel"," 2015",2310
+"Israel"," 2016",2209
+"Israel"," 2017",2172
+"Israel"," 2018",2229
+"Israel"," 2019",2280
+"Italy"," 1990",39972
+"Italy"," 1995",37388
+"Italy"," 2000",35528
+"Italy"," 2005",31006
+"Italy"," 2006",30487
+"Italy"," 2007",30276
+"Italy"," 2008",30170
+"Italy"," 2009",29907
+"Italy"," 2010",29155
+"Italy"," 2011",28977
+"Italy"," 2012",28571
+"Italy"," 2013",27544
+"Italy"," 2014",26698
+"Italy"," 2015",26774
+"Italy"," 2016",24621
+"Italy"," 2017",23673
+"Italy"," 2018",24159
+"Italy"," 2019",24666
+"Japan"," 1990",30170
+"Japan"," 1995",30601
+"Japan"," 2000",30660
+"Japan"," 2005",30215
+"Japan"," 2006",29820
+"Japan"," 2007",29585
+"Japan"," 2008",29387
+"Japan"," 2009",29195
+"Japan"," 2010",29733
+"Japan"," 2011",31048
+"Japan"," 2012",32632
+"Japan"," 2013",34486
+"Japan"," 2014",35968
+"Japan"," 2015",36924
+"Japan"," 2016",37617
+"Japan"," 2017",37897
+"Japan"," 2018",38937
+"Japan"," 2019",39692
+"Korea"," 1990",17922
+"Korea"," 1995",16510
+"Korea"," 2000",16803
+"Korea"," 2005",15989
+"Korea"," 2006",15651
+"Korea"," 2007",15442
+"Korea"," 2008",15201
+"Korea"," 2009",15126
+"Korea"," 2010",15293
+"Korea"," 2011",15701
+"Korea"," 2012",16528
+"Korea"," 2013",17213
+"Korea"," 2014",17817
+"Korea"," 2015",18377
+"Korea"," 2016",18665
+"Korea"," 2017",19587
+"Korea"," 2018",20506
+"Korea"," 2019",21837
+"Latvia"," 1990",2648
+"Latvia"," 1995",2992
+"Latvia"," 2000",2118
+"Latvia"," 2005",2158
+"Latvia"," 2006",2251
+"Latvia"," 2007",2212
+"Latvia"," 2008",2070
+"Latvia"," 2009",1991
+"Latvia"," 2010",1958
+"Latvia"," 2011",1859
+"Latvia"," 2012",1744
+"Latvia"," 2013",1649
+"Latvia"," 2014",1480
+"Latvia"," 2015",1340
+"Latvia"," 2016",1172
+"Latvia"," 2017",1086
+"Latvia"," 2018",1095
+"Latvia"," 2019",1119
+"Lithuania"," 1990",2512
+"Lithuania"," 1995",2741
+"Lithuania"," 2000",1989
+"Lithuania"," 2005",2193
+"Lithuania"," 2006",2274
+"Lithuania"," 2007",2356
+"Lithuania"," 2008",2306
+"Lithuania"," 2009",2146
+"Lithuania"," 2010",2169
+"Lithuania"," 2011",2111
+"Lithuania"," 2012",2005
+"Lithuania"," 2013",1910
+"Lithuania"," 2014",1720
+"Lithuania"," 2015",1625
+"Lithuania"," 2016",1439
+"Lithuania"," 2017",1244
+"Lithuania"," 2018",1251
+"Lithuania"," 2019",1264
+"Luxembourg"," 1990",209
+"Luxembourg"," 1995",178
+"Luxembourg"," 2000",143
+"Luxembourg"," 2005",127
+"Luxembourg"," 2006",127
+"Luxembourg"," 2007",126
+"Luxembourg"," 2008",126
+"Luxembourg"," 2009",127
+"Luxembourg"," 2010",128
+"Luxembourg"," 2011",124
+"Luxembourg"," 2012",118
+"Luxembourg"," 2013",110
+"Luxembourg"," 2014",100
+"Luxembourg"," 2015",92
+"Luxembourg"," 2016",84
+"Luxembourg"," 2017",83
+"Luxembourg"," 2018",86
+"Luxembourg"," 2019",91
+"Mexico"," 1990",21198
+"Mexico"," 1995",24160
+"Mexico"," 2000",25183
+"Mexico"," 2005",24168
+"Mexico"," 2006",23965
+"Mexico"," 2007",24070
+"Mexico"," 2008",25364
+"Mexico"," 2009",26566
+"Mexico"," 2010",26868
+"Mexico"," 2011",27335
+"Mexico"," 2012",28559
+"Mexico"," 2013",30986
+"Mexico"," 2014",32481
+"Mexico"," 2015",33267
+"Mexico"," 2016",33593
+"Mexico"," 2017",34479
+"Mexico"," 2018",35062
+"Mexico"," 2019",36582
+"Netherlands"," 1990",8588
+"Netherlands"," 1995",8208
+"Netherlands"," 2000",7497
+"Netherlands"," 2005",6122
+"Netherlands"," 2006",5950
+"Netherlands"," 2007",5826
+"Netherlands"," 2008",5811
+"Netherlands"," 2009",5774
+"Netherlands"," 2010",5729
+"Netherlands"," 2011",5542
+"Netherlands"," 2012",5281
+"Netherlands"," 2013",4901
+"Netherlands"," 2014",4536
+"Netherlands"," 2015",4462
+"Netherlands"," 2016",4483
+"Netherlands"," 2017",4540
+"Netherlands"," 2018",4566
+"Netherlands"," 2019",4569
+"New Zealand"," 1990",449
+"New Zealand"," 1995",435
+"New Zealand"," 2000",389
+"New Zealand"," 2005",314
+"New Zealand"," 2006",307
+"New Zealand"," 2007",306
+"New Zealand"," 2008",304
+"New Zealand"," 2009",300
+"New Zealand"," 2010",294
+"New Zealand"," 2011",292
+"New Zealand"," 2012",284
+"New Zealand"," 2013",273
+"New Zealand"," 2014",271
+"New Zealand"," 2015",266
+"New Zealand"," 2016",267
+"New Zealand"," 2017",271
+"New Zealand"," 2018",290
+"New Zealand"," 2019",303
+"Norway"," 1990",1660
+"Norway"," 1995",1349
+"Norway"," 2000",1158
+"Norway"," 2005",710
+"Norway"," 2006",692
+"Norway"," 2007",688
+"Norway"," 2008",678
+"Norway"," 2009",662
+"Norway"," 2010",640
+"Norway"," 2011",624
+"Norway"," 2012",582
+"Norway"," 2013",534
+"Norway"," 2014",478
+"Norway"," 2015",441
+"Norway"," 2016",408
+"Norway"," 2017",380
+"Norway"," 2018",384
+"Norway"," 2019",393
+"Poland"," 1990",37707
+"Poland"," 1995",38114
+"Poland"," 2000",32220
+"Poland"," 2005",30360
+"Poland"," 2006",30634
+"Poland"," 2007",31132
+"Poland"," 2008",31335
+"Poland"," 2009",31466
+"Poland"," 2010",30660
+"Poland"," 2011",30062
+"Poland"," 2012",29503
+"Poland"," 2013",28181
+"Poland"," 2014",26598
+"Poland"," 2015",26810
+"Poland"," 2016",26631
+"Poland"," 2017",27042
+"Poland"," 2018",27501
+"Poland"," 2019",27762
+"Portugal"," 1990",3873
+"Portugal"," 1995",3727
+"Portugal"," 2000",3919
+"Portugal"," 2005",3285
+"Portugal"," 2006",3128
+"Portugal"," 2007",3015
+"Portugal"," 2008",2890
+"Portugal"," 2009",2779
+"Portugal"," 2010",2661
+"Portugal"," 2011",2548
+"Portugal"," 2012",2461
+"Portugal"," 2013",2361
+"Portugal"," 2014",2261
+"Portugal"," 2015",2184
+"Portugal"," 2016",2138
+"Portugal"," 2017",2106
+"Portugal"," 2018",2085
+"Portugal"," 2019",2086
+"Slovak Republic"," 1990",5758
+"Slovak Republic"," 1995",5324
+"Slovak Republic"," 2000",4533
+"Slovak Republic"," 2005",4513
+"Slovak Republic"," 2006",4460
+"Slovak Republic"," 2007",4494
+"Slovak Republic"," 2008",4338
+"Slovak Republic"," 2009",4249
+"Slovak Republic"," 2010",4060
+"Slovak Republic"," 2011",3968
+"Slovak Republic"," 2012",3775
+"Slovak Republic"," 2013",3606
+"Slovak Republic"," 2014",3469
+"Slovak Republic"," 2015",3513
+"Slovak Republic"," 2016",3337
+"Slovak Republic"," 2017",3345
+"Slovak Republic"," 2018",3392
+"Slovak Republic"," 2019",3472
+"Slovenia"," 1990",1306
+"Slovenia"," 1995",1347
+"Slovenia"," 2000",1157
+"Slovenia"," 2005",993
+"Slovenia"," 2006",967
+"Slovenia"," 2007",939
+"Slovenia"," 2008",901
+"Slovenia"," 2009",876
+"Slovenia"," 2010",863
+"Slovenia"," 2011",849
+"Slovenia"," 2012",852
+"Slovenia"," 2013",832
+"Slovenia"," 2014",779
+"Slovenia"," 2015",809
+"Slovenia"," 2016",778
+"Slovenia"," 2017",777
+"Slovenia"," 2018",796
+"Slovenia"," 2019",823
+"Spain"," 1990",13816
+"Spain"," 1995",12436
+"Spain"," 2000",13827
+"Spain"," 2005",12393
+"Spain"," 2006",11896
+"Spain"," 2007",11681
+"Spain"," 2008",11377
+"Spain"," 2009",10951
+"Spain"," 2010",10534
+"Spain"," 2011",10370
+"Spain"," 2012",10210
+"Spain"," 2013",9805
+"Spain"," 2014",9610
+"Spain"," 2015",9577
+"Spain"," 2016",8933
+"Spain"," 2017",8626
+"Spain"," 2018",8751
+"Spain"," 2019",8880
+"Sweden"," 1990",2695
+"Sweden"," 1995",2171
+"Sweden"," 2000",1910
+"Sweden"," 2005",1329
+"Sweden"," 2006",1314
+"Sweden"," 2007",1307
+"Sweden"," 2008",1296
+"Sweden"," 2009",1287
+"Sweden"," 2010",1264
+"Sweden"," 2011",1200
+"Sweden"," 2012",1065
+"Sweden"," 2013",905
+"Sweden"," 2014",765
+"Sweden"," 2015",693
+"Sweden"," 2016",669
+"Sweden"," 2017",658
+"Sweden"," 2018",655
+"Sweden"," 2019",649
+"Switzerland"," 1990",3556
+"Switzerland"," 1995",3212
+"Switzerland"," 2000",2608
+"Switzerland"," 2005",2055
+"Switzerland"," 2006",2016
+"Switzerland"," 2007",2000
+"Switzerland"," 2008",1984
+"Switzerland"," 2009",1984
+"Switzerland"," 2010",1946
+"Switzerland"," 2011",1895
+"Switzerland"," 2012",1862
+"Switzerland"," 2013",1802
+"Switzerland"," 2014",1710
+"Switzerland"," 2015",1635
+"Switzerland"," 2016",1435
+"Switzerland"," 2017",1310
+"Switzerland"," 2018",1337
+"Switzerland"," 2019",1374
+"Türkiye"," 1990",28236
+"Türkiye"," 1995",31103
+"Türkiye"," 2000",29364
+"Türkiye"," 2005",29743
+"Türkiye"," 2006",30661
+"Türkiye"," 2007",32266
+"Türkiye"," 2008",34566
+"Türkiye"," 2009",37689
+"Türkiye"," 2010",39172
+"Türkiye"," 2011",39842
+"Türkiye"," 2012",40311
+"Türkiye"," 2013",41417
+"Türkiye"," 2014",42461
+"Türkiye"," 2015",42656
+"Türkiye"," 2016",42080
+"Türkiye"," 2017",41320
+"Türkiye"," 2018",41068
+"Türkiye"," 2019",41524
+"United Kingdom"," 1990",41283
+"United Kingdom"," 1995",36518
+"United Kingdom"," 2000",29354
+"United Kingdom"," 2005",22367
+"United Kingdom"," 2006",21383
+"United Kingdom"," 2007",20598
+"United Kingdom"," 2008",19983
+"United Kingdom"," 2009",19041
+"United Kingdom"," 2010",18367
+"United Kingdom"," 2011",17544
+"United Kingdom"," 2012",16721
+"United Kingdom"," 2013",15820
+"United Kingdom"," 2014",14790
+"United Kingdom"," 2015",14411
+"United Kingdom"," 2016",14180
+"United Kingdom"," 2017",14198
+"United Kingdom"," 2018",14527
+"United Kingdom"," 2019",14449
+"United States"," 1990",95261
+"United States"," 1995",95320
+"United States"," 2000",89992
+"United States"," 2005",77543
+"United States"," 2006",73935
+"United States"," 2007",69494
+"United States"," 2008",65851
+"United States"," 2009",61680
+"United States"," 2010",58312
+"United States"," 2011",56525
+"United States"," 2012",54581
+"United States"," 2013",52907
+"United States"," 2014",51243
+"United States"," 2015",49867
+"United States"," 2016",47411
+"United States"," 2017",45517
+"United States"," 2018",46629
+"United States"," 2019",47787
+"OECD Asia Oceania"," 1990",53074
+"OECD Asia Oceania"," 1995",52411
+"OECD Asia Oceania"," 2000",52368
+"OECD Asia Oceania"," 2005",50552
+"OECD Asia Oceania"," 2006",49771
+"OECD Asia Oceania"," 2007",49380
+"OECD Asia Oceania"," 2008",48911
+"OECD Asia Oceania"," 2009",48586
+"OECD Asia Oceania"," 2010",49278
+"OECD Asia Oceania"," 2011",51050
+"OECD Asia Oceania"," 2012",53420
+"OECD Asia Oceania"," 2013",55916
+"OECD Asia Oceania"," 2014",57994
+"OECD Asia Oceania"," 2015",59548
+"OECD Asia Oceania"," 2016",60382
+"OECD Asia Oceania"," 2017",61550
+"OECD Asia Oceania"," 2018",63660
+"OECD Asia Oceania"," 2019",65893
