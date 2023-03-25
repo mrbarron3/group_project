@@ -1,0 +1,121 @@
+---
+title: "Environmental Stringency"
+author: "Maya Barron"
+date: "2023-03-25"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warnings = FALSE, message = FALSE)
+```
+
+```{r, warning = FALSE, include = FALSE}
+# imports
+library(tidyverse)
+library(shiny)
+library(readxl)
+library(patchwork)
+library(plotly)
+library(ggridges)
+theme_set(theme_bw())
+```
+
+```{r}
+# datasets
+emissions = read_csv("https://raw.githubusercontent.com/mrbarron3/group_project/main/data.csv")
+
+emissions = emissions %>%
+  group_by(Country) %>%
+  mutate(avg_epsv = mean(Environmental_Policy_Stringency_Value)) %>%
+  ungroup() %>%
+  mutate(total_avg_epsv = median(avg_epsv)) %>%
+  arrange(desc(avg_epsv), Year)
+
+emissions_top = emissions %>%
+  filter(avg_epsv > total_avg_epsv)
+
+emissions_bottom = emissions %>%
+  filter(avg_epsv <= total_avg_epsv)
+
+emissions_groups = emissions %>%
+  group_by(Country) %>%
+  count()
+
+emissions_diff = emissions %>%
+  group_by(Country) %>%
+  mutate(year_max = max(Year), year_min = min(Year)) %>%
+  filter((Year == year_max | Year == year_min) & (Year == 2020 | Year == 1990)) %>%
+  mutate(Year = as.character(Year)) %>%
+  select(Country, Year, Environmental_Policy_Stringency_Value) %>%
+  pivot_wider(names_from = Year, values_from = Environmental_Policy_Stringency_Value) %>%
+  mutate(diff = `2020` - `1990`) %>%
+  drop_na()
+
+emi_90_20 = emissions_diff %>%
+  pivot_longer(c("2020", "1990"), names_to = "Year", values_to = "epsi")
+
+emi_90_20
+
+emissions_diff
+
+nrow(emissions_groups)
+```
+
+```{r}
+# line plot
+line_plot = ggplot(emissions, aes(x = Year, y = Environmental_Policy_Stringency_Value, color = Country)) +
+  geom_line() +
+  geom_point(size = 0.5) +
+  labs(y = "Environment Policy Stringency Value", title = "Environmental Policy Stringency Indicies Over the Years") 
+
+ggplotly(line_plot)
+# probably too much info
+```
+
+```{r}
+# density ridges
+ggplot(emissions) +
+  geom_density_ridges(aes(Environmental_Policy_Stringency_Value, reorder(Country, Environmental_Policy_Stringency_Value)))# +
+#  labs(y = "Country", title = "Environmental Policy Stringency Indicies By Country", subtitle = "Over the Years 1990-2020 where available")
+```
+
+```{r}
+# combined box plots
+a = ggplot(emissions_top) +
+  geom_boxplot(aes(Environmental_Policy_Stringency_Value, reorder(Country, Environmental_Policy_Stringency_Value, mean))) +
+  labs(y = "Country", title = "a")
+
+b = ggplot(emissions_bottom) +
+  geom_boxplot(aes(Environmental_Policy_Stringency_Value, reorder(Country, Environmental_Policy_Stringency_Value, mean))) +
+  labs(y = "Country", title = "b")
+
+a + b +
+  plot_annotation(title = "Environmental Policy Stringency Indicies By Country", subtitle = "1990-2020")
+```
+
+```{r}
+# single boxplot
+ggplot(emissions) +
+  geom_boxplot(aes(Environmental_Policy_Stringency_Value, reorder(Country, Environmental_Policy_Stringency_Value, mean))) +
+  labs(x = "Environmental Policy Stringency Index Value", y = "Country", title = "Environmental Policy Stringency Indicies By Country, 1990-2020", subtitle = "A Smaller Subset of Years May be Used Depending on Data Availability")
+```
+
+```{r}
+# bar plot with differences between newest and oldest data
+ggplot(emissions_diff) +
+  geom_col(aes(x = reorder(Country, diff), y = diff)) +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  labs(x = "Country", y = "Increase Amount", title = "Increase Between 1990 and 2020 Environment Policy Stringency Index Value", subtitle = "Only Includes Countries Where Both 2020 and 1990 Data is Available") +
+  scale_y_continuous(expand = c(0, 0))
+```
+
+```{r}
+# double bar plot
+ggplot(emi_90_20) +
+  geom_col(aes(x = reorder(Country, epsi, max), y = epsi, fill = Year), width = 0.7, position = "dodge") + 
+  scale_fill_manual(values = c("#a67abf", "#99bf7a")) +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  scale_y_continuous(expand = c(0, 0)) +
+  labs(x = "Country", y = "Environmental Policy Stringency Index", title = "Environmental Policy Stringency Index by Country and Year", subtitle = "Only Includes Countries Where Both 2020 and 1990 Data is Available")
+```
+
