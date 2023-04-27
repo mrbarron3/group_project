@@ -15,10 +15,11 @@ library(tidyverse)
 library(readxl)
 library(plotly)
 library(ggridges)
+library(patchwork)
 theme_set(theme_bw())
 ```
 
-```{r}
+```{r, message = FALSE}
 # datasets
 emissions = read_csv("https://raw.githubusercontent.com/mrbarron3/group_project/main/data.csv")
 
@@ -55,10 +56,24 @@ emi_90_20 = emissions_diff %>%
 
 ```{r}
 # double bar plot
-ggplot(emi_90_20) +
-  geom_col(aes(x = reorder(Country, epsi, max), y = epsi, fill = Year), width = 0.7, position = "dodge") + 
-  scale_fill_manual(values = c("#a67abf", "#99bf7a")) +
+a = ggplot(emi_90_20) +
+  geom_col(aes(x = reorder(Country, diff), y = epsi, fill = Year), width = 0.7, position = "dodge") + 
+  scale_fill_manual(values = c("#D95F02", "#1B9E77")) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
   scale_y_continuous(expand = c(0, 0)) +
-  labs(x = "Country", y = "Environmental Policy Stringency Index", title = "Environmental Policy Stringency Index by Country and Year", subtitle = "Only Includes Countries Where Both 2020 and 1990 Data is Available")
+  labs(x = "", y = "EPSI", title = "Environmental Policy Stringency Index (EPSI) by Country and Year", subtitle = "Only Includes Countries Where Both 2020 and 1990 Data is Available")
+```
+
+```{r}
+# bar plot with differences between newest and oldest data
+b = ggplot(emissions_diff) +
+  geom_col(aes(x = reorder(Country, diff), y = diff), fill = "#7570B3") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  labs(x = "Country", y = "Increase Amount", title = "Increase Between 1990 and 2020 Environmental Policy Stringency Index") +
+  scale_y_continuous(expand = c(0, 0))
+```
+
+```{r, fig.height = 7}
+# combined plot
+a / b
 ```
