@@ -48,52 +48,67 @@ countries <- pull(data, Country) %>%
    unique() %>%
    na.omit()
 
+# explanatory titles and text
+
+header_gg = function() {
+  headerPanel("Global Greenhouse Gas Emissions by Country")
+  }
+
+text_gg = function() {
+  mainPanel("This data represents greenhouse gas emissions of countries from the years of 1990-2020.
+              
+Users can select one type of emission source and a time range to depict on the heat map below. The heat map shows the value for the selected emission type and the bar graph shows the average of all the emission types over the given time range. Note: There are some datapoints missing for certain types of CO2 emission sources for some years and countries.")
+}
+
+header_eps = function() {
+  headerPanel("Environmental Policy Stringency Index by Country")
+}
+
+text_eps = function() {
+  mainPanel("This data represents the environmental policy stringency index of countries from the years of 1990-2020.
+              
+Users can select a beginning and ending year to depict on the bar graphs below. The first bar graph depicts the Environmental Policy Stringency Indexes of countries where data from the starting and ending year of the Year Range slider are both available. The second graph shows the difference between the two selected years. Both graphs are sorted based on the difference shown in the second graph.")
+}
 # creating the UI with background, text, slider bars, selections, and tabs
   
 ui <- fluidPage(
+    
    setBackgroundColor(
     color = "lightgrey",
     gradient = c("linear", "radial"),
     direction = c("bottom", "top", "right", "left"),
     shinydashboard = FALSE),
-   
-# adds a title
-
-    headerPanel("Global Greenhouse Gas Emissions by Country"),
-   
-# explanatory text
-
-    mainPanel("This data represents greenhouse gas emissions of countries from the years of 1990-2020.
-              
-Users can select one type of emission source and a time range to depict on the heat map below. The heat map shows the value for the selected emission type and the bar graph shows the average of all the emission types over the given time range. Note: There are some datapoints missing for certain types of CO2 emission sources for some years and countries.",
+    
    
     tags$head(tags$style(HTML('* {font-family: "Comic Sans"};'))),
 
-    helpText("Create a heat map and bar graph visualizing the type of emmissions for countries with a specified time periods."),
-
 # Creating tabs with each graph
-
+    
       tabsetPanel(
-        tabPanel("Heat Map", plotOutput("heat")), 
-        tabPanel("Bar Graph",
+        tabPanel("Greenhouse",
+                 helpText("Create a heat map and bar graph visualizing the type of emmissions for countries with a specified time periods."),
+                 header_gg(),
+                 sidebarPanel(
+                  sliderInput("slider", label = h4("Year Range"), min = 1990, 
+                      max = 2020, value = c(1990, 2020), sep = ""),
+              
+                  selectInput("types", "Type", types, 
+                              selected = "Carbon_Dioxide",
+                              multiple = FALSE)
+                ),
+                 text_gg(),
+                 plotOutput("heat"), 
                  plotOutput("bar")),
         tabPanel("EPS Index", 
+                 header_eps(),
+                 sidebarPanel(
+                  sliderInput("slider2", label = h4("Year Range"), min = 1990, 
+                      max = 2020, value = c(1990, 2020), sep = "")),
+                 text_eps(),
                  plotOutput("bar2"),
                  plotOutput("bar3")) 
-        )),
-  
-# creating the modular query for user selected variables
-
-  sidebarPanel(
-    sliderInput("slider", label = h4("Year Range"), min = 1990, 
-        max = 2020, value = c(1990, 2020), sep = ""),
-
-    selectInput("types", "Type", types, 
-                selected = "Carbon_Dioxide",
-                multiple = FALSE)
-    
-
-))
+        ),
+  )
  
 # making the server filter through the inputs to create the desired plot of the user
 
@@ -140,18 +155,18 @@ server <- function(input, output) {
   output$bar2 <- renderPlot({
       emissions %>%
       filter(
-             Year == input$slider[1] |
-             Year == input$slider[2]
+             Year == input$slider2[1] |
+             Year == input$slider2[2]
             ) %>%
       group_by(Country) %>%
   mutate(year_max = max(Year), year_min = min(Year)) %>%
       select(Country, Year, Environmental_Policy_Stringency_Value) %>%
     pivot_wider(names_from = Year, values_from = Environmental_Policy_Stringency_Value) %>%
-    rename(`First Year` = as.character(input$slider[1]), `Last Year` = as.character(input$slider[2])) %>%
+    rename(`First Year` = as.character(input$slider2[1]), `Last Year` = as.character(input$slider2[2])) %>%
     mutate(diff = `Last Year` - `First Year`) %>%
     drop_na() %>%
   pivot_longer(c(`Last Year`, `First Year`), names_to = "Year", values_to = "epsi") %>%
-    mutate(Year = str_replace(Year, "Last Year", as.character(input$slider[2])), Year = str_replace(Year, "First Year", as.character(input$slider[1]))) %>%
+    mutate(Year = str_replace(Year, "Last Year", as.character(input$slider2[2])), Year = str_replace(Year, "First Year", as.character(input$slider2[1]))) %>%
     ggplot() +
   geom_col(aes(x = reorder(Country, diff), y = epsi, fill = Year), width = 0.7, position = "dodge") + 
   scale_fill_manual(values = c("#D95F02", "#1B9E77")) +
@@ -164,12 +179,12 @@ server <- function(input, output) {
   output$bar3  <- renderPlot({
     emissions %>%
       filter(
-             Year == input$slider[1] |
-             Year == input$slider[2]
+             Year == input$slider2[1] |
+             Year == input$slider2[2]
             ) %>%
       select(Country, Year, Environmental_Policy_Stringency_Value) %>%
     pivot_wider(names_from = Year, values_from = Environmental_Policy_Stringency_Value) %>%
-    rename(`First Year` = as.character(input$slider[1]), `Last Year` = as.character(input$slider[2])) %>%
+    rename(`First Year` = as.character(input$slider2[1]), `Last Year` = as.character(input$slider2[2])) %>%
     mutate(diff = `Last Year` - `First Year`) %>%
     drop_na() %>%
     ggplot() +
