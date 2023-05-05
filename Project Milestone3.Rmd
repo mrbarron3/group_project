@@ -332,35 +332,35 @@ server <- function(input, output) {
              Year == input$slider2[2]
             ) %>%
       select(Country, Year, Environmental_Policy_Stringency_Value) %>%
-    pivot_wider(names_from = Year, values_from = Environmental_Policy_Stringency_Value) %>%
-    rename(`First Year` = as.character(input$slider2[1]), `Last Year` = as.character(input$slider2[2])) %>%
-    mutate(diff = `Last Year` - `First Year`) %>%
-    drop_na()
+      pivot_wider(names_from = Year, values_from = Environmental_Policy_Stringency_Value) %>%
+      rename(`First Year` = as.character(input$slider2[1]), `Last Year` = as.character(input$slider2[2])) %>%
+      mutate(diff = `Last Year` - `First Year`) %>%
+      drop_na()
   })
   
   # eps index 2 years
   output$bar2 <- renderPlot({
     data_filt() %>%
-    pivot_longer(c(`Last Year`, `First Year`), names_to = "Year", values_to = "epsi") %>%
+      pivot_longer(c(`Last Year`, `First Year`), names_to = "Year", values_to = "epsi") %>%
       mutate(Year = str_replace(Year, "Last Year", as.character(input$slider2[2])), Year = str_replace(Year, "First Year", as.character(input$slider2[1]))) %>%
-    ggplot() +
-    geom_col(aes(x = reorder(Country, diff), y = epsi, fill = Year), width = 0.7, position = "dodge") + 
-    scale_fill_manual(values = c("#D95F02", "#1B9E77")) +
-    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
-    scale_y_continuous(expand = c(0, 0, 0.03, 0.03)) +
-    labs(x = "Country", y = "EPS Index", title = "Environmental Policy Stringency (EPS) Index by Country and Year", subtitle = "Only Includes Countries Where Data from Both Years is Available") +
-    theme(plot.background = element_rect(fill='transparent', color="grey"))
+      ggplot() +
+      geom_col(aes(x = reorder(Country, diff), y = epsi, fill = Year), width = 0.7, position = "dodge") + 
+      scale_fill_manual(values = c("#D95F02", "#1B9E77")) +
+      theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+      scale_y_continuous(expand = c(0, 0, 0.03, 0.03)) +
+      labs(x = "Country", y = "EPS Index", title = "Environmental Policy Stringency (EPS) Index by Country and Year", subtitle = "Only Includes Countries Where Data from Both Years is Available") +
+      theme(plot.background = element_rect(fill='transparent', color="grey"))
     })
   
 # eps index difference
   output$bar3  <- renderPlot({
     data_filt() %>%
-    ggplot() +
-    geom_col(aes(x = reorder(Country, diff), y = diff), fill = "#7570B3") +
-    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
-    labs(x = "Country", y = "Difference Amount", title = "Difference Between Selected Years EPS Indexes") +
-    scale_y_continuous(expand = c(0, 0, 0.03, 0.03)) +
-    theme(plot.background = element_rect(fill='transparent', color="grey"))
+      ggplot() +
+      geom_col(aes(x = reorder(Country, diff), y = diff), fill = "#7570B3") +
+      theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+      labs(x = "Country", y = "Difference Amount", title = "Difference Between Selected Years EPS Indexes") +
+      scale_y_continuous(expand = c(0, 0, 0.03, 0.03)) +
+      theme(plot.background = element_rect(fill='transparent', color="grey"))
   })
   
 }
